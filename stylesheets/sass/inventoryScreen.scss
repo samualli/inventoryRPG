@@ -8,10 +8,18 @@ $ice_color: #B6D3EE;
 $deepMarine_color: #305579; 
 
 /*DIMENSIONS*/
-$width: 768px;
-$height: 528px;
+$grid_dimension: 24px;
+$width: 35 * $grid_dimension;
+$height: 22 * $grid_dimension;
 
+/*FONTS*/
 $font-stack: 'Roboto', sans-serif;
+$fontlight: 'Roboto';
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
     background-color: #fff;
@@ -19,20 +27,85 @@ body{
 
 #topBar{
  background-color: $ice_color;
- height: 48px;
+ height: $grid_dimension * 2;
  width: inherit;
  position:relative;
 }
 #equipmentBox{
- background-color: $fadingDenim_color;
- position:relative;
- transform: translate(313px,48px);
- width: 240px;
-    height: 142px;
+    background-color: $fadingDenim_color;
+    font-family: $font-stack;
+    font-weight: 500;
+    font-size:0.875em;
+    line-height: 25px;
+    color: $ice_color;
+    position:relative;
+   
+    padding-left: $grid_dimension / 2;
+    padding-top: $grid_dimension / 2;
+    width: 4 * $grid_dimension;
+    height: 6 * $grid_dimension - ($grid_dimension/2);
+    @extend .wrapper;
+}
+#statBox{
+    font-family: $font-stack;
+    color: $ice_color;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 37px;
+    height: 6 * $grid_dimension;
+    width: 7 * $grid_dimension;
+    @extend .wrapper;
+}
+#charStats{
+    @extend #statBox;
+    width: 3 * $grid_dimension;
+    text-align: right;
+    margin-right: $grid_dimension;
+}
+#equipped{
+    @extend #equipmentBox;
+    font-style:italic;
+    width: 6 * $grid_dimension;
+    padding-left: 0px;
+    transform:translateX(-4px - $grid_dimension);
+    
+}
+#vitalStatBox{
+    @extend #statBox;   
+    font-weight:500;
+    font-size: 1.125em;
+    line-height: 37px;
+    text-transform: none;
+    
+}
+#vitalStat{
+    @extend #vitalStatBox;
+    font-weight:300;
+    text-align: right;
+}
+.leftWrapper{
+    padding-top: $grid_dimension;
+    padding-left: 2 * $grid_dimension;
+    @extend .wrapper;
+}
+
+/*Extended Classes*/
+.wrapper{
+    display:inline-block;
+    position:relative;
+    
+    vertical-align: text-top;
+}
+.nextWrapper{
+    position:relative;
+    padding-left: 2 * $grid_dimension;
+    padding-top: $grid_dimension;
+    
 }
 .background{
     background-color: $moonlit_color;
-    position:relative;
-    width: $width;
-    height: $height;
+    height:$height;
+    width:$width;
+    
 }
