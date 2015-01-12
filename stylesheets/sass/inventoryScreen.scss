@@ -160,3 +160,10 @@ body{
     padding-top: $itemPadding;
     border-bottom: 1px solid $fadingDenim_color;
 }
+.itemObj:hover{
+    background-color:$royalBlue_color;
+}
+.equipped{
+    font-style:italic;
+    background-color:$royalBlue_color;
+}

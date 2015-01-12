@@ -1,0 +1,14 @@
+schedule = "11:00am - 12:00am: The Divine/Dark Arts Room:A2.\n1:00pm - 2:00pm: Close Combat: Room:B1.\n2:00pm - 3:00pm: Fire-Arms Room: Training Field.";
+steelblade = "A blade that has seen it's glory days pass by long before.  Even though age wore down on it's effectiveness, it is still quite deadly. (Damage: 1 - 4)";
+potion = "A healing drink concocted from mysterious herbs which alchemy class failed to teach you about. Heals 50 Hp.";
+shoulderplate = "A shoddy steel plate fashioned to form around the shoulder region of the torso offering little protection. (Armor: 2)";
+uniform = "The uniform issued to each student from the academy.  When worn, disables the equipment of other armor, for obvious reasons. (Armor: 0)";
+skullmask = "A bandana with a skull design.  A weird aura seems to eminate from it. (Armor: 1)";
+bandana = "A red bandana used to cover the face.  Offers more intimidation than protection. (Armor: 1)";
+baretta = "An M9. Baretta 92FS. Semi-automatic with a capacity of 15 rounds.  Uses 9mm bullets. (Damage: 5-12)";
+revolver = "A basic school issued .38 revolver. Uses type R rounds. (Damage: 2-5)";
+studentid = "Your Student ID card.  It also serves as your credit card and all in one access to many of the schools facilities.";
+ammo9mm = "Standard 9mm bullets. Type P bullets.(+0 damage)";
+ammo38 = ".38 rounds.  These rounds were invented a century before and are used by revolvers boasting the lowest muzzle velocity in modern tech. Type R bullets.(+0 Damage)";
+ammoMagnum = ".44 Magnum rounds.  The metal in these bullets are denser and therefore offer more damage. Type R bullets.(+2 Damage)";
+icebrand = "A sword misleadingly resembling an overgrown icicle, however, it is a magical sword made of sharp ice shards.  It grants ice damage, slowing the enemy's stamina regeneration rate down. (Damage: 5-14) (Ice)";

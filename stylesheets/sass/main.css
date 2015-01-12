@@ -122,4 +122,11 @@ body {
   padding-top: 4.8px;
   border-bottom: 1px solid #4F6479; }
 
+.itemObj:hover {
+  background-color: #225D95; }
+
+.equipped {
+  font-style: italic;
+  background-color: #225D95; }
+
 /*# sourceMappingURL=main.css.map */
