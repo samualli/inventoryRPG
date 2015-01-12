@@ -71,18 +71,30 @@ body{
     transform:translateX(-4px - $grid_dimension);
     
 }
-#vitalStatBox{
+#vitalStatStatic{
     @extend #statBox;   
     font-weight:500;
     font-size: 1.125em;
     line-height: 37px;
     text-transform: none;
+    width: 4 * $grid_dimension;
     
 }
-#vitalStat{
-    @extend #vitalStatBox;
+#vitalStatDynamic{
+    @extend #vitalStatStatic;
     font-weight:300;
     text-align: right;
+    width: 6 * $grid_dimension;
+
+}
+#damageInfoStatic{
+    @extend #vitalStatStatic;
+    width: 6 * $grid_dimension;
+    padding-left: $grid_dimension;
+}
+#damageInfoDynamic{
+    @extend #vitalStatDynamic;
+    width: 3 * $grid_dimension;
 }
 .leftWrapper{
     padding-top: $grid_dimension;

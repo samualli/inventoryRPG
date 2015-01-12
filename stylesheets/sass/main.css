@@ -28,7 +28,7 @@ body {
   width: 96px;
   height: 132px; }
 
-#statBox, #charStats, #vitalStatBox, #vitalStat {
+#statBox, #charStats, #vitalStatStatic, #vitalStatDynamic, #damageInfoDynamic, #damageInfoStatic {
   font-family: "Roboto", sans-serif;
   color: #B6D3EE;
   text-transform: uppercase;
@@ -49,22 +49,31 @@ body {
   padding-left: 0px;
   transform: translateX(-28px); }
 
-#vitalStatBox, #vitalStat {
+#vitalStatStatic, #vitalStatDynamic, #damageInfoDynamic, #damageInfoStatic {
   font-weight: 500;
   font-size: 1.125em;
   line-height: 37px;
-  text-transform: none; }
+  text-transform: none;
+  width: 96px; }
 
-#vitalStat {
+#vitalStatDynamic, #damageInfoDynamic {
   font-weight: 300;
-  text-align: right; }
+  text-align: right;
+  width: 144px; }
+
+#damageInfoStatic {
+  width: 144px;
+  padding-left: 24px; }
+
+#damageInfoDynamic {
+  width: 72px; }
 
 .leftWrapper {
   padding-top: 24px;
   padding-left: 48px; }
 
 /*Extended Classes*/
-.wrapper, #equipmentBox, #equipped, #statBox, #charStats, #vitalStatBox, #vitalStat, .leftWrapper {
+.wrapper, #equipmentBox, #equipped, #statBox, #charStats, #vitalStatStatic, #vitalStatDynamic, #damageInfoDynamic, #damageInfoStatic, .leftWrapper {
   display: inline-block;
   position: relative;
   vertical-align: text-top; }
