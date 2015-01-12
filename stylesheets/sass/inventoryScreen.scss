@@ -14,7 +14,6 @@ $height: 22 * $grid_dimension;
 
 /*FONTS*/
 $font-stack: 'Roboto', sans-serif;
-$fontlight: 'Roboto';
 
 *{
     margin: 0px;
@@ -96,9 +95,27 @@ body{
     @extend #vitalStatDynamic;
     width: 3 * $grid_dimension;
 }
+#itemPortrait{
+    @extend #statBox;
+    background-color: $fadingDenim_color;
+    width: 4 * $grid_dimension;
+    height: 4 * $grid_dimension;
+}
+#itemDescription{
+    @extend .wrapper;
+    width: 15 * $grid_dimension;
+    height: 3 * $grid_dimension;
+    font-weight: 500;
+    font-size: 0.75em;
+    color: $ice_color;
+    margin-left: $grid_dimension;
+    padding: $grid_dimension/2;
+    background-color: $fadingDenim_color;
+}
 .leftWrapper{
     padding-top: $grid_dimension;
     padding-left: 2 * $grid_dimension;
+    border: 1px solid red;
     @extend .wrapper;
 }
 

@@ -28,7 +28,7 @@ body {
   width: 96px;
   height: 132px; }
 
-#statBox, #charStats, #vitalStatStatic, #vitalStatDynamic, #damageInfoDynamic, #damageInfoStatic {
+#statBox, #charStats, #vitalStatStatic, #vitalStatDynamic, #damageInfoDynamic, #damageInfoStatic, #itemPortrait {
   font-family: "Roboto", sans-serif;
   color: #B6D3EE;
   text-transform: uppercase;
@@ -68,12 +68,28 @@ body {
 #damageInfoDynamic {
   width: 72px; }
 
+#itemPortrait {
+  background-color: #4F6479;
+  width: 96px;
+  height: 96px; }
+
+#itemDescription {
+  width: 360px;
+  height: 72px;
+  font-weight: 500;
+  font-size: 0.75em;
+  color: #B6D3EE;
+  margin-left: 24px;
+  padding: 12px;
+  background-color: #4F6479; }
+
 .leftWrapper {
   padding-top: 24px;
-  padding-left: 48px; }
+  padding-left: 48px;
+  border: 1px solid red; }
 
 /*Extended Classes*/
-.wrapper, #equipmentBox, #equipped, #statBox, #charStats, #vitalStatStatic, #vitalStatDynamic, #damageInfoDynamic, #damageInfoStatic, .leftWrapper {
+.wrapper, #equipmentBox, #equipped, #statBox, #charStats, #vitalStatStatic, #vitalStatDynamic, #damageInfoDynamic, #damageInfoStatic, #itemPortrait, #itemDescription, .leftWrapper {
   display: inline-block;
   position: relative;
   vertical-align: text-top; }
