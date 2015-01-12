@@ -9,8 +9,12 @@ $deepMarine_color: #305579;
 
 /*DIMENSIONS*/
 $grid_dimension: 24px;
-$width: 35 * $grid_dimension;
+$width: (35 - 3) * $grid_dimension;
 $height: 22 * $grid_dimension;
+
+/*Item List Padding*/
+$itemPadding: $grid_dimension / 5;
+$itemListWidth: $grid_dimension * 6;
 
 /*FONTS*/
 $font-stack: 'Roboto', sans-serif;
@@ -103,7 +107,7 @@ body{
 }
 #itemDescription{
     @extend .wrapper;
-    width: 15 * $grid_dimension;
+    width: 15 * $grid_dimension - $grid_dimension/2;
     height: 3 * $grid_dimension;
     font-weight: 500;
     font-size: 0.75em;
@@ -112,10 +116,15 @@ body{
     padding: $grid_dimension/2;
     background-color: $fadingDenim_color;
 }
+#itemList{
+    @extend .wrapper;
+    background-color:$fadingDenim_color;
+    height: $height - $grid_dimension*2;
+    width: $grid_dimension * 6;
+}
 .leftWrapper{
     padding-top: $grid_dimension;
     padding-left: 2 * $grid_dimension;
-    border: 1px solid red;
     @extend .wrapper;
 }
 
@@ -123,7 +132,6 @@ body{
 .wrapper{
     display:inline-block;
     position:relative;
-    
     vertical-align: text-top;
 }
 .nextWrapper{
@@ -137,4 +145,18 @@ body{
     height:$height;
     width:$width;
     
+}
+
+/*Item List*/
+.itemObj{
+    position:relative;
+    width:$itemListWidth - $itemPadding;
+    height:$grid_dimension - $itemPadding;
+    background-color: $deepMarine_color;
+    font-weight:500;
+    color:$ice_color;
+    font-size: 0.75em;
+    padding-left: $itemPadding;
+    padding-top: $itemPadding;
+    border-bottom: 1px solid $fadingDenim_color;
 }
