@@ -1,6 +1,3 @@
-/* Samuel Li
-Inventory Example */
-
 $(document).ready(function(){
       var itemLibrary = {
         "itemLibrary": [
@@ -112,4 +109,29 @@ $(document).ready(function(){
         ]
       }
     
+      //Display Item
+      function displayItem(item){
+          //Creates an underscore function that retrieves the name of the json items
+          var getName = _.template("<%= name %>");
+          //var getDescription = _.template("<%= description =%>");
+          
+          for(var i=0; i<itemLibrary.itemLibrary.length; i++){
+                var text = getName(itemLibrary.itemLibrary[i]);
+                /*if(text==item){
+                    var description = getDescription(itemLibrary.itemLibrary[i]);
+                    $('#itemDescription').html(description);
+                }*/
+          }
+          
+          //$('#itemList').append(text);
+      }
+      
+      
+      //Javascript Hover
+      
+      $('.itemObj').hover(function(){
+          displayItem($(this).html());
+      });
+      
+      
 });
