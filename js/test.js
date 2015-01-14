@@ -2,6 +2,7 @@ $(document).ready(function(){
       var itemLibrary = {
         "itemLibrary": [
             {
+                "id": 0,
                 "name": "Baretta M9",
                 "type": "gun",
                 "description": "An M9 Baretta 92FS. Semi-automatic with a capacity of 15 rounds.                        Uses 9mm bullets. (Damage: 5-12)",
@@ -10,6 +11,7 @@ $(document).ready(function(){
                 "value": 500,
             },
             {
+                "id": 1,
                 "name": "Shoulder Plate",
                 "type": "chest",
                 "description": "A shoddy steel plate fashioned to form around the shoulder region of the torso offering little protection. (Armor: 2)",
@@ -17,6 +19,7 @@ $(document).ready(function(){
                 "value": 0,
             },
             {
+                "id": 2,
                 "name": "Laser Sight Mod",
                 "type": "mod",
                 "description": "A laser sight that will increase the accuracy of a pistol. (Accuracy+5%)",
@@ -24,6 +27,7 @@ $(document).ready(function(){
                 "effect":"ACC+5"
             },
             {
+                "id": 3,
                 "name": "Bandana",
                 "type": "helmet",
                 "description": "A red bandana used to cover the face.  Offers more intimidation than protection. (Armor: 1)",
@@ -31,18 +35,21 @@ $(document).ready(function(){
                 "armor": 1
             },
             {
+                "id": 4,
                 "name": "Skull Print",
                 "type": "helmet",
                 "description": "A bandana with a skull design.  A weird aura seems to eminate from it. (Armor: 1)",
                 "armor": 1
             },
             {
+                "id": 5,
                 "name": "Potion",
                 "type": "consummable",
                 "description": "A healing drink concocted from mysterious herbs.  It leaves your bag smelling like floor-cleaning solution. Heals 50 hp.",
                 "effect": "HP+50"
             },
             {
+                "id": 6,
                 "name": "Steel Blade",
                 "type": "weapon",
                 "description": "The standard blade handed to all students on orientation day.  While still effective in combat, it is an unspoken rule at school that students must eventually own better hand-to-hand weapon for themselves for reputation sake. (Damage: 1 - 4)",
@@ -51,32 +58,38 @@ $(document).ready(function(){
                 "value": 0
             },
             {
+                "id": 7,
                 "name": "Uniform",
                 "type": "chest",
                 "description": "The uniform issued to each student from the academy and is expected to be worn during all classes unless during field training.  (Armor: 0)",
                 "armor": 0
             },
             {
+                "id": 8,
                 "name": "Intro to Offensive Spells",
                 "type": "quest",
                 "description": "The preface reads: 'Offensive magic is more than just fireballs and ice lances.  It is mastering the principle of elemental manipulation and applying it to your particular skillset.  If you do not practice, you will fail."
             },
             {
+                "id": 9,
                 "name": "Intro to Defensive Spells",
                 "type": "quest",
                 "description": "Chapter 1: Healing Spells.  WARNING: Without skill and practice, a lack of MP and skill may cause the healing spell to backfire and cause damage instead.  A platoon with one skilled healer is much better off than having a squad who believe they can use healing spells learned from a pamphlet."
             },
             {
+                "id": 10,
                 "name": "Schedule",
                 "type": "quest",
                 "description": "11:00am - 12:00am: The Divine/Dark Arts Room:A2.<br>1:00pm - 2:00pm: Close Combat: Room:B1.<br>2:00pm - 3:00pm: Fire-Arms Room: Training Field."
             },
             {
+                "id": 11,
                 "name": "Student ID",
                 "type": "quest",
                 "description": "Your Student ID card.  It carreies your credits and has all in one access to many of the schools facilities.",
             },
             {
+                "id": 12,
                 "name": ".38 Revolver",
                 "type": "gun",
                 "description": "A basic school issued .38 revolver. Uses type R rounds. (Damage: 2-5)",
@@ -85,22 +98,26 @@ $(document).ready(function(){
                 "value": 0
             },
             {
+                "id": 13,
                 "name": ".44 Magnum Ammo",
                 "type": "ammoMagnum",
                 "description": "The .44 will actually fit any revolver chamber.  It's density offers more stopping power. Type R bullets.(+2 Damage)",
                 "effect": "DAM+2"
             },
             {
+                "id": 14,
                 "name": ".38 Revolver Rounds",
                 "type": "ammo38",
                 "description": "These rounds were invented a century before and are used by revolvers boasting the lowest muzzle velocity in modern tech. Type R bullets.(+0 Damage)"
             },
             {
+                "id": 15,
                 "name": "9mm Bullets",
                 "type": "ammo9mm",
                 "description": "Standard 9mm bullets. Type P bullets.(+0 damage)"
             },
             {
+                "id": 16,
                 "name": "Ice Brand",
                 "type": "weapon",
                 "description": "A sword misleadingly resembling a large icicle.  However, it is a magical sword made from magical elements that is impossible to melt.  It grants ice damage, slowing the enemy's stamina regeneration rate down. (Damage: 5-14) (Ice)",
