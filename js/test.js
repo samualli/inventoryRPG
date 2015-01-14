@@ -108,35 +108,46 @@ $(document).ready(function(){
             }
         ]
       }
-      
-      //Returns value from the key parameter given of the JSON object
+      /*---------------------------------------------------------------
+      get Function
+      Returns the value assoicated with the given key
+      PRE: objJSON must be a JSON object
+      ---------------------------------------------------------------*/
       function get(key, objJSON){
           var string = "<%=" + key + "%>";
           var getKey = _.template(string);
           
-          //TODO ERROR CATCHING
+          //TODO ERROR CATCHING if Obj not json object
           return(getKey(objJSON));
       }
-      //Display Item
-      function displayItem(item){
-          //Creates an underscore function that retrieves the name of the json items
-          var getName = _.template("<%= name %>");
-          var getDesc = _.template("<%= description %=>");
-          //var getDescription = _.template("<%= description =%>");
+      /*---------------------------------------------------------------
+      displayItem function
+      Outputs the description and associated image with the 'item'
+      Also returns the json object if it is found otherwise it will return null
+      ---------------------------------------------------------------*/
+      function displayItem(itemName){
           
+          //Finds the item
           for(var i=0; i<itemLibrary.itemLibrary.length; i++){
-                var text = getName(itemLibrary.itemLibrary[i]);
-                var description = getDesc(itemLibrary.itemLibrary[i]);
-                /*if(text==item){
-                    var description = getDescription(itemLibrary.itemLibrary[i]);
-                    $('#itemDescription').html(description);
-                }*/
+              
+              //Gets the name of the object
+              var currentItem = itemLibrary.itemLibrary[i];
+              var nameCheck = get("name", currentItem);
+              
+              if (nameCheck == itemName){
+                  $('#itemDescription').html(get("description",currentItem));
+                  i = itemLibrary.itemLibrary.length; //End the for loop
+                  return(currentItem);
+              }
+              
           }
-          
-          //$('#itemList').append(text);
+          console.log("'" + itemName + "' not found");
+          return(null);
       }
       
-      
+/*=================================================================
+     Button Functions
+============================================================*/
       //Javascript Hover
       
       $('.itemObj').hover(function(){
