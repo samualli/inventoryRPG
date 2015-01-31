@@ -110,7 +110,8 @@ body{
     width: 15 * $grid_dimension - $grid_dimension/2;
     height: 3 * $grid_dimension;
     font-weight: 500;
-    font-size: 0.75em;
+    font-size: 0.85em;
+    line-height: 1.25;
     color: $ice_color;
     margin-left: $grid_dimension;
     padding: $grid_dimension/2;
@@ -146,6 +147,7 @@ body{
     width:$width;
     
 }
+
 
 /*Item List*/
 .itemObj{

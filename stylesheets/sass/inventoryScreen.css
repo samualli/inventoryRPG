@@ -71,6 +71,7 @@ body {
 
 #itemPortrait {
   background-color: #4F6479;
+  background: url("../../assets/_img/itemSpriteSheet.png") 75 75;
   width: 96px;
   height: 96px; }
 
@@ -78,8 +79,7 @@ body {
   width: 348px;
   height: 72px;
   font-weight: 500;
-  font-size: 0.85em;
-  line-height: 1.25;
+  font-size: 0.75em;
   color: #B6D3EE;
   margin-left: 24px;
   padding: 12px;
@@ -130,4 +130,4 @@ body {
   font-style: italic;
   background-color: #225D95; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=inventoryScreen.css.map */

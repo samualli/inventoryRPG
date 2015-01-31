@@ -1,3 +1,12 @@
+/*Global Variables*/
+//Spritesheet Grid Width
+//To help target itemis in spritesheet
+var SS_URL = "../../assets/_img/itemInventory.png";
+var SS_Width = 5;
+var image_dimension = 98;
+var imagePortraitColor = "#4F6479";
+//=================
+
 $(document).ready(function(){
       var itemLibrary = {
         "itemLibrary": [
@@ -152,13 +161,25 @@ $(document).ready(function(){
               var nameCheck = get("name", currentItem);
               
               if (nameCheck == itemName){
+                  //Sets the itemDescription box to be filled with the description
+                  //associated with the item
                   $('#itemDescription').html(get("description",currentItem));
+                  //Uses the item id to find the picture
+                  var item_id = get("id", currentItem);
+                  var x_coord = -1 * item_id % SS_Width * image_dimension; 
+                  //returns the x pos of item in ss
+                  var y_coord = -1 * Math.floor(item_id/SS_Width) * image_dimension;
+                  $('#itemPortrait')
+                  .css('background', 'url(' + SS_URL + ')' + x_coord + ' ' + y_coord);
+                  $('#itemPortrait').css('background-color', imagePortraitColor);
+                  
                   i = itemLibrary.itemLibrary.length; //End the for loop
                   return(currentItem);
               }
               
           }
           console.log("'" + itemName + "' not found");
+          //will return null if item is not found
           return(null);
       }
       
@@ -166,8 +187,9 @@ $(document).ready(function(){
      Button Functions
 ============================================================*/
       //Javascript Hover
-      
+      //The title of the item in the button is used to manipulate the behavior
       $('.itemObj').hover(function(){
+          //Gets description and item picture on hover
           displayItem($(this).html());
       });
       
