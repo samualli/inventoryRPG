@@ -26,6 +26,8 @@ $(document).ready(function(){
         itemLibrary = data.itemLibrary;
     });
     
+    
+    
       /*---------------------------------------------------------------
       get Function
       Returns the value assoicated with the given key
@@ -35,7 +37,6 @@ $(document).ready(function(){
           var string = "<%=" + key + "%>";
           var getKey = _.template(string);
           
-          //TODO ERROR CATCHING if Obj not json object
           return(getKey(objJSON));
       }
       /*---------------------------------------------------------------
@@ -82,7 +83,7 @@ $(document).ready(function(){
       PRE: objJSON must be a JSON object
       ---------------------------------------------------------------*/
       function initialize(){
-          
+          //Takes character stats and equipment and calculates 
       }
       
 /*=================================================================

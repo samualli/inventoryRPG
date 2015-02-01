@@ -6,6 +6,8 @@
                 "description": "An M9 Baretta 92FS. Semi-automatic with a capacity of 15 rounds. Uses 9mm bullets. (Damage: 5-12)",
                 "dam_min": 5,
                 "dam_max": 12,
+                "clip_max": 10,
+                "ammo_type": "9mm",
                 "value": 500
             },
             {
@@ -93,6 +95,8 @@
                 "description": "A basic school issued .38 revolver. Uses type R rounds. (Damage: 2-5)",
                 "min_dam": 2,
                 "max_dam": 5,
+                "clip_max": 6,
+                "ammo_type": ".38",
                 "value": 0
             },
             {
