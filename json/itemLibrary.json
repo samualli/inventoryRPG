@@ -3,10 +3,10 @@
                 "id": 0,
                 "name": "Baretta M9",
                 "type": "gun",
-                "description": "An M9 Baretta 92FS. Semi-automatic with a capacity of 15 rounds.                        Uses 9mm bullets. (Damage: 5-12)",
+                "description": "An M9 Baretta 92FS. Semi-automatic with a capacity of 15 rounds. Uses 9mm bullets. (Damage: 5-12)",
                 "dam_min": 5,
                 "dam_max": 12,
-                "value": 500,
+                "value": 500
             },
             {
                 "id": 1,
@@ -14,7 +14,7 @@
                 "type": "chest",
                 "description": "A shoddy steel plate fashioned to form around the shoulder region of the torso offering little protection. (Armor: 2)",
                 "armor": 2,
-                "value": 0,
+                "value": 0
             },
             {
                 "id": 2,
@@ -84,7 +84,7 @@
                 "id": 11,
                 "name": "Student ID",
                 "type": "quest",
-                "description": "Your Student ID card.  It carreies your credits and has all in one access to many of the schools facilities.",
+                "description": "Your Student ID card.  It carreies your credits and has all in one access to many of the schools facilities."
             },
             {
                 "id": 12,
@@ -120,6 +120,5 @@
                 "type": "weapon",
                 "description": "A sword misleadingly resembling a large icicle.  However, it is a magical sword made from magical elements that is impossible to melt.  It grants ice damage, slowing the enemy's stamina regeneration rate down. (Damage: 5-14) (Ice)",
                 "effect": "ice"
-            }
-        ]
+            }]
 }
