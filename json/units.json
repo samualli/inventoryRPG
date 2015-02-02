@@ -1,11 +1,12 @@
-{
-    "heroes":[{
+{ "heroes":[
+  {
         "name":"Kahoona",
         "STR": 5,
         "DEX": 3,
         "INT": 2,
-        "END": 4,
+        "END": 5,
+        "EXP": 0,
         "LVL": 1
-    }
+  }
 
 ]}

@@ -22,10 +22,16 @@ var imagePortraitColor = "#4F6479";
 $(document).ready(function(){
     //Load JSON file for item library
     var itemLibrary = [];
+    var heroLibrary = [];
     $.getJSON('json/itemLibrary.json', function(data) {
         itemLibrary = data.itemLibrary;
     });
-    
+    $.getJSON('json/units.json', function(data){
+        heroLibrary = data.heroes;
+        updateInventory(heroLibrary[0]); //Temp only first hero
+    });
+
+
     
     
       /*---------------------------------------------------------------
@@ -78,12 +84,18 @@ $(document).ready(function(){
       }
     
      /*---------------------------------------------------------------
-      initialize Function
-      Returns the value assoicated with the given key
-      PRE: objJSON must be a JSON object
+      updateInventory Function
+      Updates the stats on the inventory screen
+      PRE: Hero is a hero object with hp, dex, end, int, lvl
       ---------------------------------------------------------------*/
-      function initialize(){
-          //Takes character stats and equipment and calculates 
+      function updateInventory(hero){
+        //Can be modified to view multipled party members
+        //Char stats string construction
+                  var mp = hero.INT * 5;
+                  var hp = hero.END * 5 + hero.LVL * 10;
+                  var tempString = hero.STR + "<br>" + hero.DEX + "<br>" + hero.INT + "<br>" + hero.END;
+                  $('#charStats').html(tempString);
+            //Takes character stats and equipment and calculates
       }
       
 /*=================================================================
